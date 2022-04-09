@@ -1,0 +1,57 @@
+@import "colors.scss";
+
+.hero-container {
+
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+
+    @media screen and (max-width: 768px) {
+        flex-flow: column nowrap;
+    }
+
+
+
+    .hero {
+        width: 250px;
+        height: 250px;
+        background: $primary-soft-blue;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin-left: auto;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        position: relative;
+        max-width: 90rem;
+
+        .hero-img {
+
+            margin: auto;
+            width: 100px;
+            height: 100px;
+
+
+            svg {
+                transform: scale(.3);
+            }
+        }
+    }
+
+    .hero-content {
+        margin: auto;
+        padding-top: 3.75rem;
+        padding-bottom: 3.75rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        max-width: 90rem;
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: $neutral-very-dark-blue;
+        }
+    }
+}
