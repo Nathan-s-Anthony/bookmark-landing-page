@@ -4,13 +4,13 @@ import "../css/navbar.scss";
 import HamburgerMenu from "../assets/icon-hamburger.svg";
 import Logo from "../assets/logo-bookmark.svg";
 import { useState, useEffect } from "react";
+import Buttons from "./Buttons";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [toggleCloseIcon, setToggleCloseIcon] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
-    setToggleCloseIcon(!toggleCloseIcon);
   };
 
   useEffect(() => {
@@ -47,15 +47,17 @@ const Navbar = () => {
           <div className="logo">
             <Logo />
           </div>
-          {(toggleMenu || screenWidth > 500) && (
+          {(toggleMenu || screenWidth > 900) && (
             <ul className="list">
               {links.map((link) => (
                 <Link key={link.id} to={link.url}>
                   {link.name}
                 </Link>
               ))}
+              <Buttons text="Login" />
             </ul>
           )}
+
           <div className="hamburger-menu">
             <HamburgerMenu onClick={toggleNav} />
           </div>
