@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Section from "./Section";
 import Features from "./Features";
+import Extensions from "./Extensions";
 import Tabs from "./Tabs";
 import Hero from "./Hero";
 import "../css/hero.scss";
@@ -19,6 +20,9 @@ const Layout = ({ children }) => {
       <Section>
         <Features />
         <Tabs />
+      </Section>
+      <Section>
+        <Extensions />
       </Section>
       <Footer />
     </>

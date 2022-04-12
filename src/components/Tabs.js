@@ -5,7 +5,7 @@ import Tab from "./Tab";
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0);
 
-  const [tabs, setTabs] = useState([
+  const [tabs] = useState([
     {
       title: "Simple Bookmarking",
       heading: "Bookmark in one click",
@@ -29,26 +29,29 @@ const Tabs = () => {
     setActiveTab(index);
   };
   return (
-    <div className="tabs">
-      <div className="tabs-header">
-        {tabs.map((tab, index) => (
-          <Tab
-            key={index}
-            title={tab.title}
-            active={index === activeTab}
-            onClick={() => onTabClick(index)}
-          />
-        ))}
-      </div>
+    <>
+      <div className="graphic-2 "></div>
+      <div className="tabs">
+        <div className="tabs-header">
+          {tabs.map((tab, index) => (
+            <Tab
+              key={index}
+              title={tab.title}
+              active={index === activeTab}
+              onClick={() => onTabClick(index)}
+            />
+          ))}
+        </div>
 
-      <div className="tabs-content">
-        <div className="tab-img">test</div>
-        <div className="tab-info">
-          <h2>{tabs[activeTab].heading}</h2>
-          {tabs[activeTab].content}
+        <div className="tabs-content">
+          <div className="tab-img"></div>
+          <div className="tab-info">
+            <h2>{tabs[activeTab].heading}</h2>
+            {tabs[activeTab].content}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 export default Tabs;

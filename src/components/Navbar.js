@@ -5,9 +5,9 @@ import HamburgerMenu from "../assets/icon-hamburger.svg";
 import Logo from "../assets/logo-bookmark.svg";
 import { useState, useEffect } from "react";
 import Buttons from "./Buttons";
+var window = require("global/window");
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [toggleCloseIcon, setToggleCloseIcon] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
@@ -57,9 +57,8 @@ const Navbar = () => {
               <Buttons text="Login" />
             </ul>
           )}
-
           <div className="hamburger-menu">
-            <HamburgerMenu onClick={toggleNav} />
+            <HamburgerMenu onClick={toggleNav} role="button" />
           </div>
         </div>
       </nav>
