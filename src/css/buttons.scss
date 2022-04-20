@@ -1,0 +1,11 @@
+@import "./colors.scss";
+
+button {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background: $primary-soft-blue;
+    color: #fff;
+    box-shadow: 0px 4px 5px 0px $neutral-grayish-blue;
+    cursor: pointer;
+}
