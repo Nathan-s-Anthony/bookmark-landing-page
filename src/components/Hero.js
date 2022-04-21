@@ -17,7 +17,11 @@ const Hero = () => {
             Try it for free.
           </p>
           <div className="hero-buttons">
-            <Button text="Get it on Chrome" to="#chrome" />
+            <Button
+              text="Get it on Chrome"
+              to="#chrome"
+              styleName="btn-primary"
+            />
             <Button text="Get it on Firefox" />
           </div>
         </div>

@@ -1,8 +1,8 @@
 import React from "react";
-
+import "../css/features.scss";
 const Features = () => {
   return (
-    <div className="features">
+    <div className="features" id="features">
       <div className="features-info">
         <h2>Features</h2>
         <p>

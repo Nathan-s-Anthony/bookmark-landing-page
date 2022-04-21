@@ -54,7 +54,7 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <Buttons text="Login" />
+              <Buttons text="LOGIN" styleName="btn-secondary-nav" />
             </ul>
           )}
           <div className="hamburger-menu">
