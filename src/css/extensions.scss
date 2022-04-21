@@ -1,0 +1,99 @@
+@import "colors.scss";
+@import "variables.scss";
+
+.extensions {
+    max-width: $max-width-containers;
+    margin: auto;
+    padding: 0 $padding-right 0 $padding-left;
+
+    h2 {
+        text-align: $textCenter;
+
+    }
+
+    p {
+        text-align: $textCenter;
+        margin-top: 1rem;
+    }
+
+    .extensions-info {
+        max-width: $max-width-content;
+        margin: auto;
+    }
+}
+
+.boxes {
+    max-width: $max-width-containers;
+    margin: auto;
+    padding: 0 $padding-right 0 $padding-left;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+
+    &:nth-child(1) {
+        margin-top: -15px;
+        background: red;
+    }
+
+    &:nth-child(3) {
+        margin-top: 25px;
+    }
+}
+
+.box {
+    position: relative;
+    box-shadow: 0px 4px 5px 0px hsl(229deg 12% 91%);
+    max-width: 30rem;
+
+    border-radius: 25px;
+
+
+    .box-button {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        button {
+            width: 80%;
+
+        }
+    }
+
+    hr {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 28%;
+
+        border-radius: 25px;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='black' stroke-width='4' stroke-dasharray='2%2c 8' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+    }
+
+    .box-content {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 55px;
+        text-align: center;
+
+        p {
+            text-align: center;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            margin: auto;
+            margin-bottom: 1rem;
+        }
+
+
+
+    }
+
+}

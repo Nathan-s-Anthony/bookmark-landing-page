@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import "colors.scss";
 
 html {
     font-size: 18px;
@@ -16,4 +17,24 @@ body {
     font-weight: 400;
     font-family: 'Rubik',
         sans-serif;
+    font-size: 18px;
+
+    h1 {
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
+        color: $neutral-very-dark-blue;
+    }
+
+    p {
+        color: $neutral-grayish-blue;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+
+        color: $neutral-very-dark-blue;
+    }
 }

@@ -1,0 +1,23 @@
+@import "./colors.scss";
+@import "./variables.scss";
+
+.features {
+    max-width: $max-width-containers;
+    margin: auto;
+    padding: $padding-top $padding-right $padding-bottom $padding-left;
+
+    h2 {
+        text-align: $textCenter;
+
+    }
+
+    p {
+        text-align: $textCenter;
+        margin-top: 1rem;
+    }
+
+    .features-info {
+        max-width: $max-width-content;
+        margin: auto;
+    }
+}

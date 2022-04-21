@@ -4,8 +4,30 @@ button {
     padding: 15px;
     border-radius: 5px;
     border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
     background: $primary-soft-blue;
     color: #fff;
-    box-shadow: 0px 4px 5px 0px $neutral-grayish-blue;
-    cursor: pointer;
+    padding: 15px 10px 15px 10px;
+}
+
+.btn-secondary {
+    background: $primary-soft-red;
+    color: $neutral-very-dark-blue;
+    padding: 15px 10px 15px 10px;
+    color: #fff;
+
+
+}
+
+.btn-secondary-nav {
+    background: $primary-soft-red;
+    color: $neutral-very-dark-blue;
+    padding: 15px 10px 15px 10px;
+    color: #fff;
+
+    padding: 15px 30px 15px 30px;
+
 }
