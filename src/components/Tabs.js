@@ -7,25 +7,31 @@ const Tabs = () => {
 
   const [tabs] = useState([
     {
+      id: "simpleBookmarking",
       title: "Simple Bookmarking",
       heading: "Bookmark in one click",
       content:
         "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
       image: "/static/illustration-features-tab-1.svg",
+      url: "#simpleBookmarking",
     },
     {
+      id: "speedySearch",
       title: "Speedy Searching",
       heading: "Intelligent search",
       content:
         "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.",
       image: "/static/illustration-features-tab-2.svg",
+      url: "#speedySearch",
     },
     {
+      id: "easySharing",
       title: "Easy Sharing",
       heading: "Intelligent search",
       content:
         "Easily share your bookmarks and collections with others. Create a shareable link that you can send at a the click of a button.",
       image: "/static/illustration-features-tab-3.svg",
+      url: "#easySharing",
     },
   ]);
   const onTabClick = (index) => {
@@ -39,6 +45,7 @@ const Tabs = () => {
           {tabs.map((tab, index) => (
             <Tab
               key={index}
+              link={tab.url}
               title={tab.title}
               active={index === activeTab}
               onClick={() => onTabClick(index)}
@@ -50,10 +57,10 @@ const Tabs = () => {
           <div className="tabs-info-img">
             <img src={tabs[activeTab].image} alt={tabs[activeTab].title} />
           </div>
-          <div className="tabs-info-content">
+          <div className="tabs-info-content" id={tabs[activeTab].id}>
             <h2>{tabs[activeTab].heading}</h2>
             <p>{tabs[activeTab].content}</p>
-            <Buttons text="More Info" />
+            <Buttons text="More Info" styleName="btn-primary" />
           </div>
         </div>
       </div>

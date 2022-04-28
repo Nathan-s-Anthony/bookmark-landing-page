@@ -4,7 +4,7 @@
 .extensions {
     max-width: $max-width-containers;
     margin: auto;
-    padding: 0 $padding-right 0 $padding-left;
+    padding: $padding-top $padding-right $padding-bottom $padding-left;
 
     h2 {
         text-align: $textCenter;
