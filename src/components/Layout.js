@@ -9,7 +9,7 @@ import Tabs from "./Tabs";
 import Hero from "./Hero";
 import Signup from "./Signup";
 import "../css/hero.scss";
-import "../css/reset.scss";
+import "../css/Reset.scss";
 import "../css/fonts.scss";
 
 const Layout = ({ children }) => {
