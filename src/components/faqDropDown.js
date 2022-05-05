@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import "../css/faqDropDown.scss";
 import FaqItem from "./faqItem";
 const FaqDropDown = () => {
   const [activeItem, setActiveItem] = useState(0);
