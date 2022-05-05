@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/faq.scss";
+import FaqDropdown from "./faqDropDown";
 const Faq = () => {
   return (
     <div className="faq">
@@ -10,6 +11,7 @@ const Faq = () => {
           answered please feel free to email us.
         </p>
       </div>
+      <FaqDropdown />
     </div>
   );
 };

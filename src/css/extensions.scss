@@ -34,14 +34,15 @@
     justify-content: center;
     gap: 20px;
 
-    &:nth-child(1) {
-        margin-top: -15px;
-        background: red;
-    }
+}
 
-    &:nth-child(3) {
-        margin-top: 25px;
-    }
+.boxes:nth-child(1) {
+    margin-top: -15px;
+    background: red;
+}
+
+.boxes:nth-child(3) {
+    margin-top: 25px;
 }
 
 .box {

@@ -61,9 +61,8 @@ const Navbar = () => {
             <Buttons text="LOGIN" styleName="btn-secondary-nav" />
           </ul>
 
-          {(toggleMenuMobile || screenWidth > 900) && (
+          {(toggleMenuMobile || screenWidth < 900) && (
             <ul className={toggleMenuMobile ? "list-mobile-active" : null}>
-              <div className="mobile-navigation-container"></div>
               <div className="navigation">
                 <div className="logo">
                   <Logo />
