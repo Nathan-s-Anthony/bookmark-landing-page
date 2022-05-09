@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Bookmark landing page`,
+    title: `Bookmark Landing Page`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
@@ -8,28 +8,20 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        icon: "src/assets/icon.png",
-      },
-    },
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "assets",
-        path: "./src/assets/",
+        name: "images",
+        path: "./src/images/",
       },
-      __key: "assets",
+      __key: "images",
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: "gatsby-plugin-manifest",
       options: {
-        rule: {
-          include: /assets/,
-        },
+        icon: "./src/images/favicon-32x32.png",
       },
     },
   ],
