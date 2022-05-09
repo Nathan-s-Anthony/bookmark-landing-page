@@ -4,7 +4,7 @@
 .tabs {
     max-width: $max-width-containers;
     margin: auto;
-    padding: $padding-top $padding-right $padding-bottom $padding-left;
+    padding: 0 1.5rem 0 1.5rem;
     display: flex;
     flex-flow: column wrap;
     align-items: center;

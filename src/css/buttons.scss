@@ -5,20 +5,38 @@ button {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+
 }
 
 .btn-primary {
     background: $primary-soft-blue;
     color: #fff;
     padding: 15px 10px 15px 10px;
+    border: 2px solid $primary-soft-blue;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background: none;
+        border: 2px solid $primary-soft-blue;
+        color: $primary-soft-blue;
+    }
+
 }
 
+
 .btn-secondary {
-    background: $primary-soft-red;
+
     color: $neutral-very-dark-blue;
     padding: 15px 10px 15px 10px;
-    color: #fff;
 
+    border: 2px solid transparent;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background: none;
+        border: 2px solid $neutral-very-dark-blue;
+        color: $neutral-very-dark-blue;
+    }
 
 }
 
@@ -30,4 +48,9 @@ button {
 
     padding: 15px 30px 15px 30px;
 
+    @media screen and (max-width:900px) {
+        width: 86%;
+        border: 2px solid #fff;
+        background: none;
+    }
 }
