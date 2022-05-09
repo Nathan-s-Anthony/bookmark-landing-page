@@ -1,5 +1,5 @@
 import React from "react";
-import HeroIull from "../assets/illustration-hero.svg";
+import HeroIull from "../images/illustration-hero.svg";
 import Button from "./Buttons";
 const Hero = () => {
   return (
@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="graphic-1 "></div>
       <div className="hero-container">
         <div className="hero-img">
-          <HeroIull />
+          <img src={HeroIull} alt="hero" />
         </div>
         <div className="hero-content">
           <h1>A simple Bookmark Manager</h1>
@@ -22,7 +22,7 @@ const Hero = () => {
               to="#chrome"
               styleName="btn-primary"
             />
-            <Button text="Get it on Firefox" />
+            <Button text="Get it on Firefox" styleName="btn-secondary" />
           </div>
         </div>
       </div>

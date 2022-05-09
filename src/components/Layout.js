@@ -1,4 +1,5 @@
 import React from "react";
+
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Section from "./Section";
@@ -12,9 +13,15 @@ import "../css/hero.scss";
 import "../css/Reset.scss";
 import "../css/fonts.scss";
 
-const Layout = ({ children }) => {
+import Seo from "../components/SEO";
+const Layout = () => {
   return (
     <>
+      <Seo
+        description="Bookmark your favorite pages with our extension"
+        lang="en"
+        title="Bookmarker"
+      />
       <Navbar />
       <Section>
         <Hero />

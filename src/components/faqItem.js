@@ -1,5 +1,5 @@
 import React from "react";
-import IconArrow from "../assets/icon-arrow.svg";
+import IconArrow from "../images/icon-arrow.svg";
 import "../css/faq.scss";
 const FaqItem = ({ title, active, onClick, link, content, activeContent }) => {
   return (
@@ -12,7 +12,7 @@ const FaqItem = ({ title, active, onClick, link, content, activeContent }) => {
       >
         <a>
           {title}
-          <IconArrow />
+          <img src={IconArrow} alt="arrow" />
         </a>
       </div>
       <div

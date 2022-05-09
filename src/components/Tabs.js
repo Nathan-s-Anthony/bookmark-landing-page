@@ -2,6 +2,9 @@ import React from "react";
 import { useState } from "react";
 import Tab from "./Tab";
 import Buttons from "./Buttons";
+import IllustrationsTab1 from "../images/illustration-features-tab-1.svg";
+import IllustrationsTab2 from "../images/illustration-features-tab-2.svg";
+import IllustrationsTab3 from "../images/illustration-features-tab-3.svg";
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -12,7 +15,7 @@ const Tabs = () => {
       heading: "Bookmark in one click",
       content:
         "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.",
-      image: "/static/illustration-features-tab-1.svg",
+      image: IllustrationsTab1,
       url: "#simpleBookmarking",
     },
     {
@@ -21,7 +24,7 @@ const Tabs = () => {
       heading: "Intelligent search",
       content:
         "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.",
-      image: "/static/illustration-features-tab-2.svg",
+      image: IllustrationsTab2,
       url: "#speedySearch",
     },
     {
@@ -30,7 +33,7 @@ const Tabs = () => {
       heading: "Intelligent search",
       content:
         "Easily share your bookmarks and collections with others. Create a shareable link that you can send at a the click of a button.",
-      image: "/static/illustration-features-tab-3.svg",
+      image: IllustrationsTab3,
       url: "#easySharing",
     },
   ]);

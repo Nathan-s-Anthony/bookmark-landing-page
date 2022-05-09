@@ -1,19 +1,17 @@
 import React from "react";
 import { Link } from "gatsby";
 import "../css/navbar.scss";
-import HamburgerMenu from "../assets/icon-hamburger.svg";
-import Logo from "../assets/logo-bookmark.svg";
+import HamburgerMenu from "../images/icon-hamburger.svg";
+import Logo from "../images/logo-bookmark.svg";
+import LogoWhite from "../images/logo-bookmark-white.svg";
 import { useState, useEffect } from "react";
 import Buttons from "./Buttons";
-import IconClose from "../assets/icon-close.svg";
+import IconClose from "../images/icon-close.svg";
 var window = require("global/window");
 const Navbar = () => {
-  // const [toggleMenu, setToggleMenu] = useState(false);
   const [toggleMenuMobile, setToggleMenuMobile] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  // const toggleNav = () => {
-  //   setToggleMenu(!toggleMenu);
-  // };
+
   const toggleMobileNav = () => {
     setToggleMenuMobile(!toggleMenuMobile);
   };
@@ -47,9 +45,9 @@ const Navbar = () => {
   return (
     <header>
       <nav>
-        <div className="navigation">
+        <div className="navigation desktop">
           <div className="logo">
-            <Logo />
+            <img src={Logo} alt="logo" />
           </div>
 
           <ul className="list">
@@ -62,13 +60,18 @@ const Navbar = () => {
           </ul>
 
           {(toggleMenuMobile || screenWidth < 900) && (
-            <ul className={toggleMenuMobile ? "list-mobile-active" : null}>
+            <ul
+              className={
+                toggleMenuMobile ? "list-mobile-active" : "list-mobile-inactive"
+              }
+            >
               <div className="navigation">
                 <div className="logo">
-                  <Logo />
+                  {" "}
+                  <img src={LogoWhite} alt="logo" />
                 </div>
                 <div className="hamburger-menu">
-                  <IconClose onClick={toggleMobileNav} role="button" />
+                  <img src={IconClose} onClick={toggleMobileNav} alt="Menu" />
                 </div>
               </div>
               <div className="navigation-mobile">
@@ -83,7 +86,7 @@ const Navbar = () => {
           )}
 
           <div className="hamburger-menu">
-            <HamburgerMenu onClick={toggleMobileNav} role="button" />
+            <img src={HamburgerMenu} onClick={toggleMobileNav} alt="Menu" />
           </div>
         </div>
       </nav>

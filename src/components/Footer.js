@@ -1,5 +1,7 @@
 import React from "react";
-import Logo from "../assets/logo-bookmark.svg";
+import IconTwitter from "../images/icon-twitter.svg";
+import IconFacebook from "../images/icon-facebook.svg";
+import Logo from "../images/logo-bookmark-white.svg";
 import { Link } from "gatsby";
 import "../css/footer.scss";
 
@@ -25,12 +27,12 @@ const Footer = () => {
     {
       name: "facebook",
       url: "https://www.facebook.com/",
-      image: "/static/icon-facebook.svg",
+      image: IconFacebook,
     },
     {
       name: "twitter",
       url: "https://www.twitter.com/",
-      image: "/static/icon-twitter.svg",
+      image: IconTwitter,
     },
   ];
   return (
@@ -38,7 +40,8 @@ const Footer = () => {
       <div className="navigation-footer">
         <div className="navigation-footer-links">
           <div className="logo">
-            <Logo />
+            {" "}
+            <img src={Logo} alt="logo" />
           </div>
           <ul className="list">
             {links.map((link) => (

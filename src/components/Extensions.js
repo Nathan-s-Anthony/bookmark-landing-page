@@ -1,29 +1,31 @@
 import React from "react";
 import Buttons from "./Buttons";
 import "../css/extensions.scss";
-
+import LogoOpera from "../images/logo-opera.svg";
+import LogoChrome from "../images/logo-chrome.svg";
+import LogoFireFox from "../images/logo-firefox.svg";
+import BgDots from "../images/bg-dots.svg";
 const Extensions = () => {
   const browsers = [
     {
       name: "Chrome",
       title: "Add to Chrome",
       version: "Minimum version 62",
-      image: "/static/logo-chrome.svg",
+      image: LogoChrome,
     },
     {
       name: "Firefox",
       title: "Add to Firefox",
       version: "Minimum version 55",
-      image: "/static/logo-firefox.svg",
+      image: LogoOpera,
     },
     {
       name: "Opera",
       title: "Add to Opera",
       version: "Minimum version 46",
-      image: "/static/logo-opera.svg",
+      image: LogoFireFox,
     },
   ];
-
   return (
     <>
       <div className="extensions" id="extensions">
@@ -36,15 +38,17 @@ const Extensions = () => {
         </div>
       </div>
       <div className="boxes">
-        {browsers.map((browser) => (
+        {browsers.map((browser, index) => (
           <div className="box" key={browser.name}>
             {" "}
             <div className="box-content">
-              <img src={browser.image} alt={browser.name} />
+              <div className="tile-image">
+                <img src={browser.image} alt={browser.title} key={index} />
+              </div>
               <h2>{browser.title}</h2> <p>{browser.version}</p>
             </div>
             <div className="box-button">
-              <hr></hr>
+              <img src={BgDots} alt="dots" />
               <Buttons text="Add & install Extension" styleName="btn-primary" />
             </div>
           </div>
