@@ -18,7 +18,8 @@
 
     .extensions-info {
         max-width: $max-width-content;
-        margin: auto;
+        margin: 0 auto 5rem auto;
+
     }
 }
 
@@ -34,16 +35,25 @@
     justify-content: center;
     gap: 20px;
 
+
+
+
 }
 
-.boxes:nth-child(1) {
-    margin-top: -15px;
-    background: red;
+@media screen and (min-width:1024px) {
+    .box-1 {
+        margin-top: -8rem;
+    }
+
+    .box-2 {
+        margin-top: -4.5rem;
+    }
+
+    .box-3 {
+        margin-top: -2.5rem;
+    }
 }
 
-.boxes:nth-child(3) {
-    margin-top: 25px;
-}
 
 .box {
     position: relative;
