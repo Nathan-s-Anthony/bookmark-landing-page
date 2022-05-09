@@ -43,10 +43,16 @@ button {
 .btn-secondary-nav {
     background: $primary-soft-red;
     color: $neutral-very-dark-blue;
-    padding: 15px 10px 15px 10px;
+    border: 2px solid transparent;
     color: #fff;
+    transition: all .3s ease-in-out;
+    padding: 15px 30px;
 
-    padding: 15px 30px 15px 30px;
+    &:hover {
+        background: none;
+        border: 2px solid $primary-soft-red;
+
+    }
 
     @media screen and (max-width:900px) {
         width: 86%;
