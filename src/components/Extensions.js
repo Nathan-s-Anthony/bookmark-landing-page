@@ -9,18 +9,21 @@ const Extensions = () => {
   const browsers = [
     {
       name: "Chrome",
+      box: "box-1",
       title: "Add to Chrome",
       version: "Minimum version 62",
       image: LogoChrome,
     },
     {
       name: "Firefox",
+      box: "box-2",
       title: "Add to Firefox",
       version: "Minimum version 55",
       image: LogoOpera,
     },
     {
       name: "Opera",
+      box: "box-3",
       title: "Add to Opera",
       version: "Minimum version 46",
       image: LogoFireFox,
@@ -39,7 +42,7 @@ const Extensions = () => {
       </div>
       <div className="boxes">
         {browsers.map((browser, index) => (
-          <div className="box" key={browser.name}>
+          <div className={`box ${browser.box}`} key={browser.name}>
             {" "}
             <div className="box-content">
               <div className="tile-image">
