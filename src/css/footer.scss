@@ -37,7 +37,7 @@
 
     .list {
         display: flex;
-        width: 20rem;
+        width: 30rem;
         gap: 20px;
         flex-flow: row wrap;
         justify-content: center;
@@ -52,6 +52,8 @@
     }
 
     .logo {
+        width: 8rem;
+
         svg path {
             fill: #fff;
 
