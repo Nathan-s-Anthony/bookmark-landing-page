@@ -15,7 +15,7 @@ const Signup = () => {
               <input type="text" placeholder="Enter your email address" />
             </div>
             <div className="button-container">
-              <Button text="Contact Us" styleName="btn-secondary" />
+              <Button text="Contact Us" styleName="btn-secondary-nav" />
             </div>
           </form>
         </div>
