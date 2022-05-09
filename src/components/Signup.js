@@ -10,9 +10,13 @@ const Signup = () => {
           Stay up-to-date with what <br></br>we're doing
         </h2>
         <div className="signup-form">
-          <form>
+          <form method="POST">
             <div className="email-container">
-              <input type="text" placeholder="Enter your email address" />
+              <input
+                type="text"
+                placeholder="Enter your email address"
+                required
+              />
             </div>
             <div className="button-container">
               <Button text="Contact Us" styleName="btn-secondary-nav" />
