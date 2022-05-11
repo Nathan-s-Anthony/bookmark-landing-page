@@ -1,54 +1,79 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Frontend Mentor - Bookmark landing page solution
 
-## 🚀 Quick start
+This is a solution to the [Bookmark landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-1.  **Create a Gatsby site.**
+## Table of contents
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## Overview
 
-2.  **Start developing.**
+### The challenge
 
-    Navigate into your new site’s directory and start it up.
+Users should be able to:
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-3.  **Open the code and start customizing!**
+### Links
 
-    Your site is now running at http://localhost:8000!
+- Solution URL: [Add solution URL here](https://github.com/Nathan-s-Anthony/bookmark-landing-page)
+- Live Site URL: [Add live site URL here](https://bookmark-landing-page-nathan.vercel.app/)
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+## My process
 
-4.  **Learn more**
+### Built with
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- Semantic HTML5 markup
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Gatsby.js](https://www.gatsbyjs.com/) - React framework
+- [SASS](https://sass-lang.com/) - For styles
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+### What I learned
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learnt how to map data to sub components to create a more clean and concise codebase.
+See below for a code snippet:
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```js
+{
+  tabs.map((tab, index) => (
+    <Tab
+      key={index}
+      link={tab.url}
+      title={tab.title}
+      active={index === activeTab}
+      onClick={() => onTabClick(index)}
+    />
+  ));
+}
+```
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+### Continued development
 
-## 🚀 Quick start (Gatsby Cloud)
+I plan to turn this bookmark landing page into a full fledged website ,with login capabilities that takes the user to a dashboard.
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+### Useful resources
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+- [Stackoverflow](https://www.example.com) - Solutions posted on stackoverflow assisted me in a lot of challenges that i encountered with a lot of javascript related logic.
+- [Log Rocket](https://blog.logrocket.com/how-to-build-tab-component-react/) - This blog post helped me in creeating tab components in react.
+- [Gatsby Documentation](https://www.example.com) - The official gatsby documentation helped me setup up the meta data with react-helmet as well adding images to the project.
+
+## Author
+
+- Website - [Nathan Anthony](https://nathandev.vercel.app/)
+- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Twitter - [@yourusername](https://www.twitter.com/yourusername)
